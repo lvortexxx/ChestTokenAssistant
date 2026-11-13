@@ -1,0 +1,38 @@
+name: Bug report / Signaler un bug / Reportar un error
+description: Something does not work (unreadable replay, wrong count…) / Quelque chose ne marche pas / Algo no funciona
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        English, Français, Darija or Español are all fine. / Toutes les langues de l'assistant sont acceptées. / Cualquier idioma del asistente sirve.
+        **Don't paste your data.json**: it contains your Epic name and id. / **Ne colle pas ton data.json** (nom et id Epic). / **No pegues tu data.json** (nombre e id de Epic).
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened? / Que s'est-il passé ? / ¿Qué pasó?
+      description: What you did, what you expected, what you got. / Ce que tu as fait, ce que tu attendais, ce que tu as obtenu. / Qué hiciste, qué esperabas, qué obtuviste.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Assistant version / Version de l'assistant / Versión del asistente
+      description: Shown at the bottom of the dashboard, e.g. 0.1.0. / Affichée en bas du tableau de bord. / Se muestra abajo en el panel.
+    validations:
+      required: true
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language of the assistant / Langue / Idioma
+      options: [English, Français, Darija, Español]
+  - type: input
+    id: season
+    attributes:
+      label: Fortnite season or update / Saison ou mise à jour de Fortnite / Temporada o actualización de Fortnite
+  - type: textarea
+    id: log
+    attributes:
+      label: errors.log
+      description: Paste the content of %APPDATA%\ChestTokenAssistant\errors.log (or attach the file). / Colle le contenu de errors.log. / Pega el contenido de errors.log.
+      render: text

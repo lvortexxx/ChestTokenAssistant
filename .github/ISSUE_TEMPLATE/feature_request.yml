@@ -1,0 +1,11 @@
+name: Idea / Idée / Idea
+description: Suggest a feature or a new item for the checklist / Proposer une fonction ou un objet / Proponer una función o un objeto
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea / Ton idée / Tu idea
+      description: What would help you, and why. For a new item, its name, type, dates and odds (with a source). / Pour un objet : nom, type, dates, chances (avec une source). / Para un objeto: nombre, tipo, fechas, probabilidades (con una fuente).
+    validations:
+      required: true
